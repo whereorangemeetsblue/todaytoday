@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+#smooth-content {
+  overflow: visible;
+  width: 100%;
+  height: 700vh;
+  /* height: calc(500vh + 3060px); */
+  /* 전체 높이 */
+}
+
+.mb {
+  display: none;
+}
+
+.pc{
+  display:block;
+}
+
+@media only screen and (max-width: 500px) {
+  .pc {
+    display: none;
+  }
+
+  .mb {
+    display: block;
+  }
+
+  #smooth-content {
+    overflow: visible;
+    width: 100%;
+    height: 100vh;
+  }
+
+  #section01 {
+    height: 100vh;
+  }
+
+  #section01 .project {
+    font-family: 'Roboto', sans-serif;
+    font-size: 90px;
+    line-height: 90px;
+    color: rgb(255, 166, 0);
+    display: flex;
+  }
+
+  #section01 .summary {
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    line-height: 20px;
+    color: rgb(255, 166, 0);
+    display: flex;
+    position: absolute;
+    top: 100px;
+    left: 50px;
+  }
+
+  .mySwiper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 750px;
+    height: 500px;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 750px;
+    height: 500px;
+    object-fit: cover;
+  }
+}
